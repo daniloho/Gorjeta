@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Gorjeta</title>
+</head>
+
+<body>
+    <div class="calculadora">
+        <h1>Calculadora de Gorjeta</h1>
+        <label for="preco">Total da Conta:</label>
+        <input type="number" id="preco" placeholder="Digite o valor total da conta">
+
+        <label for="tipPercentage">Percentual de Gorjeta:</label>
+        <select id="tipPercentage">
+            <option value="0.05">5%</option>
+            <option value="0.10">10%</option>
+            <option value="0.15">15%</option>
+            <option value="0.25">25%</option>
+            <option value="0.50">50%</option>
+        </select>
+
+        <button onclick="calculateTip()">Calcular Gorjeta</button>
+
+        <div id="gorjeta"></div>
+        <div id="total"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
